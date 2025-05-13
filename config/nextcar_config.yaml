@@ -1,0 +1,92 @@
+eco_cruise:
+  constants:
+    ACTIVE:
+      type: uint8
+      value: '2'
+    INACTIVE:
+      type: uint8
+      value: '1'
+    'OFF':
+      type: uint8
+      value: '0'
+    UNAVAILABLE:
+      type: uint8
+      value: '255'
+  enabled: true
+  status: '2'  # ACTIVE
+eco_drive:
+  constants:
+    CRUISING:
+      type: uint8
+      value: '2'
+    DEPARTING:
+      type: uint8
+      value: '5'
+    INACTIVE:
+      type: uint8
+      value: '1'
+    'OFF':
+      type: uint8
+      value: '0'
+    OPTIMIZING:
+      type: uint8
+      value: '3'
+    STOPPING:
+      type: uint8
+      value: '4'
+    UNAVAILABLE:
+      type: uint8
+      value: '255'
+  enabled: true
+  status: '2'  # CRUISING
+eco_mode:
+  constants:
+    EV:
+      type: uint8
+      value: '2'
+    HYBRID:
+      type: uint8
+      value: '1'
+    PRODUCTION:
+      type: uint8
+      value: '0'
+    UNAVAILABLE:
+      type: uint8
+      value: '255'
+  enabled: true
+  mode: '1'  # HYBRID
+  saving: '15.7'
+eco_route:
+  enabled: true
+  route: '1'
+  savings:
+    energy: '12.5'
+    percent: '15.7'
+    time: '8.3'
+flags:
+  available_modules:
+  - ecoMode
+  - ecoRoute
+  - ecoDrive
+  - ecoCruise
+  eco_cruise_enabled: true
+  eco_drive_enabled: true
+  eco_mode_enabled: true
+  eco_route_enabled: true
+spat_n_map:
+  cycle_time_green: '25.0'
+  cycle_time_red: '30.0'
+  cycle_time_yellow: '5.0'
+  depart_waypoint: '36'
+  distance_to_stop: '75.3'
+  intersection_id: '12345'
+  phase: '0'  # RED
+  stop_waypoint: '35'
+  time_to_stop: '45.2'
+  timing: {}
+vehicle_intel_info:
+  modules:
+  - ecoMode
+  - ecoRoute
+  - ecoDrive
+  - ecoCruise

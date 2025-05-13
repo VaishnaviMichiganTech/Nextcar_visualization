@@ -1,0 +1,111 @@
+{
+  "eco_route": {
+    "route": null, 
+    "enabled": false, 
+    "savings": {}
+  }, 
+  "spat_n_map": {
+    "phase": null, 
+    "timing": {}, 
+    "intersection_id": null
+  }, 
+  "eco_mode": {
+    "saving": null, 
+    "enabled": false, 
+    "mode": null, 
+    "constants": {
+      "PRODUCTION": {
+        "type": "uint8", 
+        "value": "0"
+      }, 
+      "HYBRYD": {
+        "type": "uint8", 
+        "value": "1"
+      }, 
+      "UNAVAILABLE": {
+        "type": "uint8", 
+        "value": "255"
+      }, 
+      "EV": {
+        "type": "uint8", 
+        "value": "2"
+      }
+    }
+  }, 
+  "eco_cruise": {
+    "status": null, 
+    "enabled": false, 
+    "constants": {
+      "ACTIVE": {
+        "type": "uint8", 
+        "value": "2"
+      }, 
+      "INACTIVE": {
+        "type": "uint8", 
+        "value": "1"
+      }, 
+      "OFF": {
+        "type": "uint8", 
+        "value": "0"
+      }, 
+      "UNAVAILABLE": {
+        "type": "uint8", 
+        "value": "255"
+      }
+    }
+  }, 
+  "eco_drive": {
+    "status": null, 
+    "enabled": false, 
+    "constants": {
+      "OPTIMIZING": {
+        "type": "uint8", 
+        "value": "3"
+      }, 
+      "CRUISING": {
+        "type": "uint8", 
+        "value": "2"
+      }, 
+      "UNAVAILABLE": {
+        "type": "uint8", 
+        "value": "255"
+      }, 
+      "DEPARTING": {
+        "type": "uint8", 
+        "value": "5"
+      }, 
+      "INACTIVE": {
+        "type": "uint8", 
+        "value": "1"
+      }, 
+      "STOPPING": {
+        "type": "uint8", 
+        "value": "4"
+      }, 
+      "OFF": {
+        "type": "uint8", 
+        "value": "0"
+      }
+    }
+  }, 
+  "flags": {
+    "available_modules": [
+      "ecoMode", 
+      "ecoRoute", 
+      "ecoDrive", 
+      "ecoCruise"
+    ], 
+    "eco_drive_enabled": false, 
+    "eco_mode_enabled": false, 
+    "eco_route_enabled": false, 
+    "eco_cruise_enabled": false
+  }, 
+  "vehicle_intel_info": {
+    "modules": [
+      "ecoMode", 
+      "ecoRoute", 
+      "ecoDrive", 
+      "ecoCruise"
+    ]
+  }
+}
