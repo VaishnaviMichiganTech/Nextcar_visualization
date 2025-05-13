@@ -340,7 +340,7 @@ def publish_dummy_data(self, event):
     self.publisher.publish(msg)
 ```
 
-3. **Dynamic Behavior**
+3. **Dynamic Behavior to check the overlay behavior with changes**
 - **ecoMode**: Cycles through HYBRID→EV→PRODUCTION every 10s
 - **Energy Savings**: Varies 15-35% using sine wave
 - **ecoCruise**: Changes OFF→INACTIVE→ACTIVE every 5s
@@ -365,21 +365,7 @@ Overlay timers (10Hz) create JSK overlay messages
 RViz displays overlays with eco system data
 ```
 
-## Key Features
 
-### Robust Message Handling
-- Uses `hasattr()` to check if sub-messages exist
-- Won't crash if message structure changes
-- Graceful handling of missing data
-
-### Data Mapping
-- Converts numeric status codes to readable strings
-- Centralized mapping dictionaries for easy modification
-
-### Modular Design
-- Separate functions for each eco system
-- Easy to add new overlays or modify existing ones
-- Clean separation of concerns
 
 ## Running the System
 
